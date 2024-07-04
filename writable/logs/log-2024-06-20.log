@@ -1,0 +1,30 @@
+CRITICAL - 2024-06-20 18:22:13 --> Error: Object of class stdClass could not be converted to string
+[Method: GET, Route: tasks]
+in APPPATH\Views\task.php on line 13.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render()
+ 4 APPPATH\Controllers\TaskController.php(19): view()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TaskController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\Hp\\Documents\\Akmal Alkalafi\\Perkuliahan\\Semester 6\\pengembangan web\\c4-project1\\public\\index.php')
+CRITICAL - 2024-06-20 18:23:55 --> TypeError: mysqli_result::fetch_object(): Argument #1 ($class) must be a valid class name, key given
+[Method: GET, Route: tasks]
+in SYSTEMPATH\Database\MySQLi\Result.php on line 156.
+ 1 SYSTEMPATH\Database\MySQLi\Result.php(156): mysqli_result->fetch_object()
+ 2 SYSTEMPATH\Database\BaseResult.php(161): CodeIgniter\Database\MySQLi\Result->fetchObject()
+ 3 SYSTEMPATH\Database\BaseResult.php(116): CodeIgniter\Database\BaseResult->getCustomResultObject()
+ 4 SYSTEMPATH\Model.php(287): CodeIgniter\Database\BaseResult->getResult()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 6 APPPATH\Controllers\TaskController.php(12): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TaskController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\Hp\\Documents\\Akmal Alkalafi\\Perkuliahan\\Semester 6\\pengembangan web\\c4-project1\\public\\index.php')
